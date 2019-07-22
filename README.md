@@ -5,10 +5,13 @@ In this example we explore the multi-stage feature of docker, which allows us to
 The commands for each image are described down bellow:
 
  #Prod image
+ ---
  docker build -t sample-multi-stage:prod --target=prod .
  
  #Dev image
+ ---
  docker build -t sample-multi-stage:dev --target=dev .
  
  #Test image
+ ---
  docker build -t sample-multi-stage:test --target=test .
